@@ -6,8 +6,7 @@
 * [快速开始New](kuai-su-kai-shi-new/README.md)
   * [快速开始\_New (1)](kuai-su-kai-shi-new/kuai-su-kai-shi-new-1.md)
 * [认证](ren-zheng/README.md)
-  * [认证\_New](ren-zheng/ren-zheng-new.md)
-  * [认证\_New (1)](ren-zheng/ren-zheng-new-1.md)
+  * [认证\_New (2)](ren-zheng/ren-zheng-new-2.md)
 * [快速开始](kuai-su-kai-shi.md)
 
 ## APIs
