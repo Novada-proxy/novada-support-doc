@@ -8,7 +8,7 @@
 
 Content-Type：x-www-form-urlencoded
 
-Authentication：Bearer authentication header of the form Bearer <mark style="color:$warning;">**\<apikey>**</mark>&#x20;
+Authentication：Bearer YOUR\_API\_KEY
 
 > 获取apikey的两种方式
 >
@@ -64,7 +64,7 @@ curl -X POST "https://scraper.novada.com/request" ^
 
 Content-Type：x-www-form-urlencoded
 
-Authentication：Bearer authentication header of the form Bearer <mark style="color:$warning;">**\<token>**</mark>&#x20;
+Authentication：Bearer YOUR\_API\_KEY
 
 > token获取方式：[快速开始](https://developer-api.novada.com/zh)
 
@@ -127,7 +127,7 @@ curl -X POST "https://api-m.novada.com/v1/scraper/task_list" ^
 
 Content-Type：x-www-form-urlencoded
 
-Authentication：Bearer authentication header of the form Bearer <mark style="color:$warning;">**\<token>**</mark>&#x20;
+Authentication：Bearer YOUR\_API\_KEY
 
 > token获取方式：[快速开始](https://developer-api.novada.com/zh)
 
@@ -176,7 +176,7 @@ curl -X POST "https://api-m.novada.com/v1/scraper/task_status" ^
 
 Content-Type：x-www-form-urlencoded
 
-Authentication：Bearer authentication header of the form Bearer <mark style="color:$warning;">**\<token>**</mark>&#x20;
+Authentication：Bearer YOUR\_API\_KEY
 
 > token获取方式：[快速开始](https://developer-api.novada.com/zh)
 
@@ -206,7 +206,7 @@ Authentication：Bearer authentication header of the form Bearer <mark style="co
 
 Content-Type：x-www-form-urlencoded
 
-Authentication：Bearer authentication header of the form Bearer <mark style="color:$warning;">**\<token>**</mark>&#x20;
+Authentication：Bearer YOUR\_API\_KEY
 
 > token获取方式：[快速开始](https://developer-api.novada.com/zh)
 
