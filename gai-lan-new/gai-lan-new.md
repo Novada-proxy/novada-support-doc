@@ -2,13 +2,13 @@
 
 ## Novada Public API
 
-通过一致的 RESTful 接口管理代理、抓取与浏览器自动化资源。本参考文档涵盖鉴权、请求结构、错误处理、所有产品的字段定义与示例。
+通过一致接口管理代理、抓取与浏览器自动化资源。本参考文档涵盖鉴权、请求结构、错误处理、所有产品的字段定义与示例。
 
 ***
 
 ## 认证方式
 
-本文档所有接口统一使用 **API Key** 作为 Bearer Token 进行认证。在 HTTP 请求头中加入：
+本文档所有接口统一使用 **API Key** 作为 Bearer进行认证。在 HTTP 请求头中加入：
 
 ```http
 Authorization: Bearer YOUR_API_KEY
