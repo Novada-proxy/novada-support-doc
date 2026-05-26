@@ -49,6 +49,17 @@
 
 ## APIS new
 
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: false
+    downloadLink: false
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: novada-api-cn-20260526
+  ```
 * [抓取套餐](apis-new/zhua-qu-tao-can/README.md)
   * ```yaml
     type: builtin:openapi
