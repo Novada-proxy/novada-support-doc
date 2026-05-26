@@ -8,6 +8,9 @@
 * [认证](ren-zheng/README.md)
   * [认证\_New (2)](ren-zheng/ren-zheng-new-2.md)
 * [快速开始](kuai-su-kai-shi.md)
+
+## APIs
+
 * ```yaml
   type: builtin:openapi
   props:
@@ -18,19 +21,6 @@
       ref:
         kind: openapi
         spec: novada-api-cn-260411-1
-  ```
-
-## APIs
-
-* ```yaml
-  type: builtin:openapi
-  props:
-    models: false
-  dependencies:
-    spec:
-      ref:
-        kind: openapi
-        spec: api-260411-2
   ```
 * [抓取套餐](apis/zhua-qu-tao-can/README.md)
   * ```yaml
