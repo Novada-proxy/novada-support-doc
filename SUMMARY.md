@@ -47,9 +47,9 @@
     ```
   * [Scraper API](apis/zhua-qu-tao-can/scraper-api.md)
 
-***
+## APIS new
 
-* [抓取套餐 New](zhua-qu-tao-can-new/README.md)
+* [抓取套餐](apis-new/zhua-qu-tao-can/README.md)
   * ```yaml
     type: builtin:openapi
     props:
@@ -72,6 +72,6 @@
           kind: openapi
           spec: capture-unblocker-20260526
     ```
-  * [Scraper API](zhua-qu-tao-can-new/scraper-api.md)
-* [错误码](cuo-wu-ma.md)
-* [限流](xian-liu.md)
+  * [Scraper API](apis-new/zhua-qu-tao-can/scraper-api.md)
+* [错误码](apis-new/cuo-wu-ma.md)
+* [限流](apis-new/xian-liu.md)
