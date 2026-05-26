@@ -82,7 +82,6 @@
           kind: openapi
           spec: capture-unblocker-20260526
     ```
-  * [网页解锁器](zhua-qu-tao-can-new/wang-ye-jie-suo-qi.md)
   * [Scraper API](zhua-qu-tao-can-new/scraper-api.md)
 * [错误码](cuo-wu-ma.md)
 * [限流](xian-liu.md)
