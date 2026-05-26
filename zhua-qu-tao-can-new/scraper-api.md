@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# Copy of Scraper API
+# Scraper API
 
 ### 创建任务
 
