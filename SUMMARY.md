@@ -45,5 +45,6 @@
           spec: capture-unblocker-260411-1
     ```
   * [Scraper API](apis/zhua-qu-tao-can/scraper-api.md)
+  * [Copy of Scraper API](apis/zhua-qu-tao-can/copy-of-scraper-api.md)
 * [错误码](apis/cuo-wu-ma.md)
 * [限流](apis/xian-liu.md)
