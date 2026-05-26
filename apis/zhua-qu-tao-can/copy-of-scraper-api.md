@@ -35,7 +35,7 @@ Authentication：Bearer YOUR\_API\_KEY
 
 ```bash
 curl -X POST "https://scraper.novada.com/request" ^
-  -H "Authorization: Bearer test_scraper_key_123" ^
+  -H "Authorization: Bearer YOUR_API_KEY" ^
   -H "Content-Type: application/x-www-form-urlencoded" ^
   -d "scraper_name=amazon.com" ^
   -d "scraper_id=amazon_product_keywords" ^
@@ -83,7 +83,7 @@ Authentication：Bearer YOUR\_API\_KEY
 
 ```bash
 curl -X POST "https://api-m.novada.com/v1/scraper/task_list" ^
-  -H "Authorization: Bearer 填写你的token" ^
+  -H "Authorization: Bearer YOUR_API_KEY" ^
   -H "Content-Type: application/x-www-form-urlencoded" ^
   -d "limit=10" ^
   -d "page=1"
@@ -145,7 +145,7 @@ Authentication：Bearer YOUR\_API\_KEY
 
 ```bash
 curl -X POST "https://api-m.novada.com/v1/scraper/task_status" ^
-  -H "Authorization: Bearer 填写你的token" ^
+  -H "Authorization: Bearer YOUR_API_KEY" ^
   -H "Content-Type: application/x-www-form-urlencoded" ^
   -d "task_ids=330ae83bcff7479b9c97e586dbf93801"
 ```
@@ -225,7 +225,7 @@ Authentication：Bearer YOUR\_API\_KEY
 
 ```bash
 curl -X POST "https://api-m.novada.com/v1/scraper/task_download" ^
-  -H "Authorization: Bearer 填写你的token" ^
+  -H "Authorization: Bearer YOUR_API_KEY" ^
   -H "Content-Type: application/x-www-form-urlencoded" ^
   -d "task_ids=330ae83bcff7479b9c97e586dbf93801" ^
   -d "file_type=json"

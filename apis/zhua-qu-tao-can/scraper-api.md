@@ -31,7 +31,7 @@ Authentication：Bearer YOUR\_API\_KEY
 
 ```bash
 curl -X POST "https://scraper.novada.com/request" ^
-  -H "Authorization: Bearer test_scraper_key_123" ^
+  -H "Authorization: Bearer YOUR_API_KEY" ^
   -H "Content-Type: application/x-www-form-urlencoded" ^
   -d "scraper_name=amazon.com" ^
   -d "scraper_id=amazon_product_keywords" ^
