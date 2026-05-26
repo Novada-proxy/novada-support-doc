@@ -55,15 +55,34 @@
           kind: openapi
           spec: capture-unblocker-260411-1
     ```
-  * [网页解锁器](apis/zhua-qu-tao-can/wang-ye-jie-suo-qi/README.md)
-    * [网页解锁器](apis/zhua-qu-tao-can/wang-ye-jie-suo-qi/wang-ye-jie-suo-qi.md)
   * [Scraper API](apis/zhua-qu-tao-can/scraper-api.md)
 
 ***
 
 * [抓取套餐 New](zhua-qu-tao-can-new/README.md)
+  * ```yaml
+    type: builtin:openapi
+    props:
+      models: false
+      downloadLink: false
+    dependencies:
+      spec:
+        ref:
+          kind: openapi
+          spec: capture-common-20260526
+    ```
+  * ```yaml
+    type: builtin:openapi
+    props:
+      models: false
+      downloadLink: false
+    dependencies:
+      spec:
+        ref:
+          kind: openapi
+          spec: capture-unblocker-20260526
+    ```
   * [网页解锁器](zhua-qu-tao-can-new/wang-ye-jie-suo-qi.md)
   * [Scraper API](zhua-qu-tao-can-new/scraper-api.md)
-  * [Page 1](zhua-qu-tao-can-new/page-1.md)
 * [错误码](cuo-wu-ma.md)
 * [限流](xian-liu.md)
