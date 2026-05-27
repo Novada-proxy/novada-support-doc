@@ -119,5 +119,6 @@ curl -X POST https://api-m.novada.com/v1/oauth2/token \
 </details>
 
 {% hint style="info" %}
-凭证管理、入参兼容矩阵、常见问题等完整说明见 [Authentication ↗](/broken/pages/7e5c09c2fe85b520c91506c8e8af012dd5b48e87)。
+凭证管理、入参兼容矩阵、常见问题等完整说明见 [认证 ↗](ren-zheng.md)。
 {% endhint %}
+

@@ -15,7 +15,7 @@ Authorization: Bearer YOUR_API_KEY
 ```
 
 {% hint style="info" %}
-API Key 在 [**仪表盘 - 账号设置 - 我的账户 - API Key**](https://dashboard.novada.com/cn/api-key/) 创建。完整说明见 [认证 ↗](/broken/pages/9843913ec88038924ee8001d60b1326dd3d9d0a8)。
+API Key 在 [**仪表盘 - 账号设置 - 我的账户 - API Key**](https://dashboard.novada.com/cn/api-key/) 创建。完整说明见 [认证 ↗](ren-zheng.md)。
 {% endhint %}
 
 ***
@@ -48,6 +48,6 @@ API Key 在 [**仪表盘 - 账号设置 - 我的账户 - API Key**](https://dash
 ```
 
 {% hint style="info" %}
-错误场景下的 `code` 取值详见 [错误码 ↗](/broken/pages/89b274a73c05f7f6071092c60955d0e9085537e8)。
+错误场景下的 `code` 取值详见 [错误码 ↗](apis/cuo-wu-ma.md)。
 {% endhint %}
 
