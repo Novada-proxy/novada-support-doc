@@ -64,7 +64,7 @@ curl -X POST https://api-m.novada.com/v1/oauth2/token \
 
 <summary>API Key 丢失或泄露怎么办？</summary>
 
-API Key 与账号密码同等敏感。一旦怀疑泄露（误提交到 Git、被同事意外看到、设备遗失等），请立即在 [**仪表盘 - 账号设置 - 我的账户 - API Key**](https://dashboard.novada.com/cn/api-key/) 删除旧 Key 并新建一个，再把生产环境的引用替换为新 Key。
+API Key 与账号密码同等敏感。一旦怀疑泄露，请立即在 [**仪表盘 - 账号设置 - 我的账户 - API Key**](https://dashboard.novada.com/cn/api-key/) 删除旧 Key 并新建一个，再把生产环境的引用替换为新 Key。
 
 删除后旧 Key 的所有调用会立刻返回 `apikey invalid`。建议先创建新 Key、灰度切换完成后再删除旧 Key。
 
