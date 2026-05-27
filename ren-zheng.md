@@ -5,7 +5,7 @@
 当前主路径为 **API Key 直调**。并为已使用 Token 模式的老代码**长期保留兼容**，无需改造。
 
 {% hint style="success" %}
-**✅ CURRENT — API Key 直调（推荐）**
+&#x20;**推荐— API Key 直调（推荐）**
 
 单步直调，无需换 token，无过期问题。
 
