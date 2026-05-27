@@ -1,15 +1,12 @@
 # Table of contents
 
 * [概览](README.md)
-* [概览New](gai-lan-new/README.md)
-  * [概览\_New](gai-lan-new/gai-lan-new.md)
-* [快速开始New](kuai-su-kai-shi-new/README.md)
-  * [快速开始\_New (1)](kuai-su-kai-shi-new/kuai-su-kai-shi-new-1.md)
-* [认证](ren-zheng/README.md)
-  * [认证\_New (2)](ren-zheng/ren-zheng-new-2.md)
 * [快速开始](kuai-su-kai-shi.md)
+* [认证](ren-zheng.md)
+* [概览Old](gai-lan-old.md)
+* [快速开始](kuai-su-kai-shi-1.md)
 
-## APIs
+## APIsOld
 
 * ```yaml
   type: builtin:openapi
@@ -22,7 +19,7 @@
         kind: openapi
         spec: novada-api-cn-260411-1
   ```
-* [抓取套餐](apis/zhua-qu-tao-can/README.md)
+* [抓取套餐](apisold/zhua-qu-tao-can/README.md)
   * ```yaml
     type: builtin:openapi
     props:
@@ -45,9 +42,9 @@
           kind: openapi
           spec: capture-unblocker-260411-1
     ```
-  * [Scraper API](apis/zhua-qu-tao-can/scraper-api.md)
+  * [Scraper API](apisold/zhua-qu-tao-can/scraper-api.md)
 
-## APIS new
+## APIS
 
 * ```yaml
   type: builtin:openapi
@@ -60,7 +57,7 @@
         kind: openapi
         spec: 260527-1-cn-001
   ```
-* [抓取套餐](apis-new/zhua-qu-tao-can/README.md)
+* [抓取套餐](apis/zhua-qu-tao-can/README.md)
   * ```yaml
     type: builtin:openapi
     props:
@@ -83,7 +80,7 @@
           kind: openapi
           spec: capture-unblocker-20260526
     ```
-  * [Scraper API](apis-new/zhua-qu-tao-can/scraper-api.md)
+  * [Scraper API](apis/zhua-qu-tao-can/scraper-api.md)
 * ```yaml
   type: builtin:openapi
   props:
@@ -95,5 +92,5 @@
         kind: openapi
         spec: 260527-2-cn-001
   ```
-* [错误码](apis-new/cuo-wu-ma.md)
-* [限流](apis-new/xian-liu.md)
+* [错误码](apis/cuo-wu-ma.md)
+* [限流](apis/xian-liu.md)

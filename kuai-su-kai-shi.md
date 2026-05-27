@@ -1,80 +1,123 @@
----
-hidden: true
----
+# 快速开始\_New (1)
 
-# 快速开始
+三步发出第一个请求：拿 Key → 加 Authorization Header → 调接口。
 
-***
+{% stepper %}
+{% step %}
+## 注册 Novada 账号并获取 API Key
 
-### 概述
+前往 [**仪表盘 - 账号设置 - 我的账户 - API Key**](https://dashboard.novada.com/cn/api-key/) 创建一个 API Key。单账号最多可创建 10 个 Key，可独立启停，最长有效期 5 年，**支持永不过期**。
+{% endstep %}
 
-欢迎使用 Novada Public API。本文档提供了与 Novada 平台进行程序化交互的完整接口说明。通过本 API，您可以安全、高效地管理和调用平台的计算与代理服务。
+{% step %}
+## 在 HTTP 请求头加入 Authorization
 
-#### 快速入门
-
-使用Novada Public API需要获取使用凭证，保证调用安全
-
-步骤：
-
-1. 获取凭证：[登录Novada控制台—账号设置—我的账户—API Key](https://dashboard.novada.com/cn/api-key/)，获取您的 `用户名` 和 `API Key`(API Key支持更换)
-2. 获取调用令牌：使用Public API需要获取`access_token`，以便于调起每次请求\
-   `access_token`（默认有效期7天，需要及时更换或部署自动化更换程序)\
-   使用您的凭证调用认证接口，换取一个 `access_token`
-3. 发起调用：在请求头中携带该令牌，即可调用其他业务接口。
-
-示例：创建一个代理账户
-
-```
-# 步骤2. 获取访问令牌
-curl -X POST https://api-m.novada.com/v1/oauth2/token \
-  -u "your_username:your_api_key"
-
-# 步骤3. 使用令牌创建资源（假设返回的令牌是 “eyJhbG...”）
-curl -X POST https://api-m.novada.com/v1/proxy\_account/create \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." \
-  -H "Content-Type: application/json" \
-  -d '{"name": "my_agent", "type": "standard"}'
+```http
+Authorization: Bearer YOUR_API_KEY
 ```
 
-***
+所有 API Key 类产品的接口都使用同一个 API Key，不再区分产品。**一 Key 通吃。**
+{% endstep %}
 
-#### 获取访问令牌
+{% step %}
+## 发起你的第一次调用
 
-请求`POST https://api-m.novada.com/v1/oauth2/token`
+下方示例按语言切换，调用 `GET /v1/wallet/balance` 查询账户余额，响应中 `code: 0` 即表示成功。
+{% endstep %}
+{% endstepper %}
 
-认证方式：HTTP Basic Authentication
+## 示例：查询账户余额
 
-* 用户名：您的 Novada API 用户名
-* 密码：您的 Novada API Key
+`GET https://api-m.novada.com/v1/wallet/balance`
 
-响应示例
-
+{% tabs %}
+{% tab title="cURL" %}
+```bash
+curl -X GET https://api-m.novada.com/v1/wallet/balance \
+  -H "Authorization: Bearer YOUR_API_KEY"
 ```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+import requests
+
+resp = requests.get(
+    "https://api-m.novada.com/v1/wallet/balance",
+    headers={"Authorization": "Bearer YOUR_API_KEY"},
+)
+print(resp.json())
+```
+{% endtab %}
+
+{% tab title="Node.js" %}
+```javascript
+const res = await fetch("https://api-m.novada.com/v1/wallet/balance", {
+  headers: { Authorization: "Bearer YOUR_API_KEY" },
+});
+console.log(await res.json());
+```
+{% endtab %}
+
+{% tab title="Go" %}
+```go
+req, _ := http.NewRequest("GET",
+  "https://api-m.novada.com/v1/wallet/balance", nil)
+req.Header.Set("Authorization", "Bearer YOUR_API_KEY")
+
+resp, _ := http.DefaultClient.Do(req)
+defer resp.Body.Close()
+```
+{% endtab %}
+
+{% tab title="PHP" %}
+```php
+$ch = curl_init("https://api-m.novada.com/v1/wallet/balance");
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    "Authorization: Bearer YOUR_API_KEY",
+]);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+```
+{% endtab %}
+{% endtabs %}
+
+**成功响应：**
+
+```json
 {
   "code": 0,
   "data": {
-    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-    "expires_in": 604800,
-    "token_type": "bearer"
+    "balance": 168.1
   },
   "msg": "success",
-  "timestamp": 1747036799
+  "timestamp": 1779677300
 }
 ```
 
-#### 使用访问令牌
+## 凭证模式
 
-获取令牌后，将其包含在所有后续 API 请求的 `Authorization` 头中：
+Novada 当前以 **API Key 直调** 为主路径——在 HTTP Header 中加入 `Authorization: Bearer YOUR_API_KEY` 即可发起调用，无 Token 过期问题、无需事先换取。
 
+<details>
+
+<summary>兼容保留：Token Exchange 模式（老用户无需改造）</summary>
+
+原有的 Token Exchange 模式继续保留兼容：先调用 `/v1/oauth2/token` 换取 `access_token`（7 天 TTL），再用 token 调用业务接口。**现有代码无需改造**，但新项目建议直接使用 API Key 直调。
+
+```bash
+# 方式 A（推荐）：API Key 作为 Bearer 直接换 token
+curl -X POST https://api-m.novada.com/v1/oauth2/token \
+  -H "Authorization: Bearer YOUR_API_KEY"
+
+# 方式 B（兼容）：老的 Basic Auth (username:api_key) 仍可用
+curl -X POST https://api-m.novada.com/v1/oauth2/token \
+  -u "your_username:your_api_key"
 ```
-POST https://api-m.novada.com/v1/proxy_account/create
-Authorization: Bearer <access_token>
-```
 
-#### 安全最佳实践
+</details>
 
-1. 保护凭证：API 密钥等同于密码，请勿在客户端代码或公开仓库中暴露。
-2. 令牌存储：将访问令牌存储在服务端的安全内存或加密存储中。
-3. 及时轮换：定期在控制台中轮换您的 API 密钥，尤其是在怀疑泄露时。
-
-***
+{% hint style="info" %}
+凭证管理、入参兼容矩阵、常见问题等完整说明见 [Authentication ↗](/broken/pages/7e5c09c2fe85b520c91506c8e8af012dd5b48e87)。
+{% endhint %}
