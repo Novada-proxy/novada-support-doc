@@ -58,18 +58,7 @@
     spec:
       ref:
         kind: openapi
-        spec: novada-old-unblocker-cn-20260526
-  ```
-* ```yaml
-  type: builtin:openapi
-  props:
-    models: false
-    downloadLink: false
-  dependencies:
-    spec:
-      ref:
-        kind: openapi
-        spec: 260527-cn-001
+        spec: 260527-1-cn-001
   ```
 * [抓取套餐](apis-new/zhua-qu-tao-can/README.md)
   * ```yaml
@@ -95,5 +84,16 @@
           spec: capture-unblocker-20260526
     ```
   * [Scraper API](apis-new/zhua-qu-tao-can/scraper-api.md)
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: false
+    downloadLink: false
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: 260527-2-cn-001
+  ```
 * [错误码](apis-new/cuo-wu-ma.md)
 * [限流](apis-new/xian-liu.md)
