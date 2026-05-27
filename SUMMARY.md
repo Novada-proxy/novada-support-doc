@@ -69,7 +69,7 @@
     spec:
       ref:
         kind: openapi
-        spec: novada-api-cn-20260526
+        spec: 260527-cn-001
   ```
 * [抓取套餐](apis-new/zhua-qu-tao-can/README.md)
   * ```yaml
