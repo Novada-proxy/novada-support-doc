@@ -45,7 +45,7 @@ curl -X POST https://api-m.novada.com/v1/oauth2/token \
     设置名称（如 `prod-server`）与有效期（最长 5 年，可设永不过期）。
 4.  **复制并保存**
 
-    保存到密码管理器或 secret 存储（避免明文进代码仓库）。Key 可在仪表盘随时查看与复制。
+    保存到密码管理器或 secret 存储（避免明文进代码仓库）。
 
 ### API Key 管理
 
