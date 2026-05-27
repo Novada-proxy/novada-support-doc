@@ -1,16 +1,16 @@
-# 快速开始\_New (1)
+# 快速开始
 
 三步发出第一个请求：拿 Key → 加 Authorization Header → 调接口。
 
 {% stepper %}
 {% step %}
-## 注册 Novada 账号并获取 API Key
+### 注册 Novada 账号并获取 API Key
 
 前往 [**仪表盘 - 账号设置 - 我的账户 - API Key**](https://dashboard.novada.com/cn/api-key/) 创建一个 API Key。单账号最多可创建 10 个 Key，可独立启停，最长有效期 5 年，**支持永不过期**。
 {% endstep %}
 
 {% step %}
-## 在 HTTP 请求头加入 Authorization
+### 在 HTTP 请求头加入 Authorization
 
 ```http
 Authorization: Bearer YOUR_API_KEY
@@ -20,13 +20,13 @@ Authorization: Bearer YOUR_API_KEY
 {% endstep %}
 
 {% step %}
-## 发起你的第一次调用
+### 发起你的第一次调用
 
 下方示例按语言切换，调用 `GET /v1/wallet/balance` 查询账户余额，响应中 `code: 0` 即表示成功。
 {% endstep %}
 {% endstepper %}
 
-## 示例：查询账户余额
+### 示例：查询账户余额
 
 `GET https://api-m.novada.com/v1/wallet/balance`
 
@@ -96,7 +96,7 @@ curl_close($ch);
 }
 ```
 
-## 凭证模式
+### 凭证模式
 
 Novada 当前以 **API Key 直调** 为主路径——在 HTTP Header 中加入 `Authorization: Bearer YOUR_API_KEY` 即可发起调用，无 Token 过期问题、无需事先换取。
 
