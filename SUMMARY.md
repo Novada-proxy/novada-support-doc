@@ -125,9 +125,20 @@
     spec:
       ref:
         kind: openapi
-        spec: 2663-capture-cn-4
+        spec: 2663-capture-1-cn-1
   ```
 * [Scraper API](shu-ju-cai-ji-api/scraper-api.md)
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: false
+    downloadLink: false
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: 2663-capture-2-cn-1
+  ```
 
 ## 资源管理
 
