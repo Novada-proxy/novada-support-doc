@@ -100,7 +100,7 @@
 * [错误码](apisold2/cuo-wu-ma.md)
 * [限流](apisold2/xian-liu.md)
 
-## 代理
+## 代理API
 
 * ```yaml
   type: builtin:openapi
@@ -111,10 +111,10 @@
     spec:
       ref:
         kind: openapi
-        spec: 2663-proxy-cn-1
+        spec: 2663-proxy-cn-2
   ```
 
-## 数据采集
+## 数据采集API
 
 * ```yaml
   type: builtin:openapi
@@ -127,7 +127,7 @@
         kind: openapi
         spec: 2663-capture-cn-3
   ```
-* [Scraper API](shu-ju-cai-ji/scraper-api.md)
+* [Scraper API](shu-ju-cai-ji-api/scraper-api.md)
 
 ## 资源管理
 
