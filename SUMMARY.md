@@ -108,6 +108,8 @@
 * [动态数据中心代理](dai-li-chan-pin-jie-kou/dong-tai-shu-ju-zhong-xin-dai-li.md)
 * [静态ISP代理](dai-li-chan-pin-jie-kou/jing-tai-isp-dai-li.md)
 * [独享数据中心代理](dai-li-chan-pin-jie-kou/du-xiang-shu-ju-zhong-xin-dai-li.md)
+* [用户管理](dai-li-chan-pin-jie-kou/yong-hu-guan-li.md)
+* [白名单](dai-li-chan-pin-jie-kou/bai-ming-dan.md)
 
 ## 数据采集接口
 
@@ -118,8 +120,6 @@
 
 ## 资源管理
 
-* [用户管理](zi-yuan-guan-li/yong-hu-guan-li.md)
-* [白名单](zi-yuan-guan-li/bai-ming-dan.md)
 * [钱包](zi-yuan-guan-li/qian-bao.md)
 * [禁止访问域名](zi-yuan-guan-li/jin-zhi-fang-wen-yu-ming.md)
 
