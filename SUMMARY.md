@@ -100,28 +100,48 @@
 * [错误码](apisold2/cuo-wu-ma.md)
 * [限流](apisold2/xian-liu.md)
 
-## 代理产品接口
+## 代理
 
-* [动态住宅代理](dai-li-chan-pin-jie-kou/dong-tai-zhu-zhai-dai-li.md)
-* [移动代理](dai-li-chan-pin-jie-kou/yi-dong-dai-li.md)
-* [动态ISP代理](dai-li-chan-pin-jie-kou/dong-tai-isp-dai-li.md)
-* [动态数据中心代理](dai-li-chan-pin-jie-kou/dong-tai-shu-ju-zhong-xin-dai-li.md)
-* [静态ISP代理](dai-li-chan-pin-jie-kou/jing-tai-isp-dai-li.md)
-* [独享数据中心代理](dai-li-chan-pin-jie-kou/du-xiang-shu-ju-zhong-xin-dai-li.md)
-* [用户管理](dai-li-chan-pin-jie-kou/yong-hu-guan-li.md)
-* [白名单](dai-li-chan-pin-jie-kou/bai-ming-dan.md)
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: false
+    downloadLink: false
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: 2663-proxy-cn-1
+  ```
 
 ## 数据采集接口
 
-* [抓取套餐](shu-ju-cai-ji-jie-kou/zhua-qu-tao-can/README.md)
-  * [通用](shu-ju-cai-ji-jie-kou/zhua-qu-tao-can/tong-yong.md)
-  * [网页解锁器](shu-ju-cai-ji-jie-kou/zhua-qu-tao-can/wang-ye-jie-suo-qi.md)
-  * [Scraper API](shu-ju-cai-ji-jie-kou/zhua-qu-tao-can/scraper-api.md)
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: false
+    downloadLink: false
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: 2663-capture-cn-1
+  ```
+* [Scraper API](shu-ju-cai-ji-jie-kou/scraper-api.md)
 
 ## 资源管理
 
-* [钱包](zi-yuan-guan-li/qian-bao.md)
-* [禁止访问域名](zi-yuan-guan-li/jin-zhi-fang-wen-yu-ming.md)
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: false
+    downloadLink: false
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: 2663-cn-resource-1
+  ```
 
 ## 参考资料
 
