@@ -111,7 +111,7 @@
     spec:
       ref:
         kind: openapi
-        spec: 2663-proxy-cn-2
+        spec: 2663-proxy-cn-3
   ```
 
 ## 数据采集API
@@ -125,7 +125,7 @@
     spec:
       ref:
         kind: openapi
-        spec: 2663-capture-cn-3
+        spec: 2663-capture-cn-4
   ```
 * [Scraper API](shu-ju-cai-ji-api/scraper-api.md)
 
