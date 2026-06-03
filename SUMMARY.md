@@ -114,7 +114,7 @@
         spec: 2663-proxy-cn-1
   ```
 
-## 数据采集接口
+## 数据采集
 
 * ```yaml
   type: builtin:openapi
@@ -125,9 +125,9 @@
     spec:
       ref:
         kind: openapi
-        spec: 2663-capture-cn-1
+        spec: 2663-capture-cn-3
   ```
-* [Scraper API](shu-ju-cai-ji-jie-kou/scraper-api.md)
+* [Scraper API](shu-ju-cai-ji/scraper-api.md)
 
 ## 资源管理
 
