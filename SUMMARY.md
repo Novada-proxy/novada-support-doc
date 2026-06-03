@@ -22,7 +22,7 @@
     spec:
       ref:
         kind: openapi
-        spec: novada-api-cn-260411-1
+        spec: 2663-proxy-cn-5
   ```
 * [抓取套餐](apisold/zhua-qu-tao-can/README.md)
   * ```yaml
@@ -111,7 +111,7 @@
     spec:
       ref:
         kind: openapi
-        spec: 2663-proxy-cn-3
+        spec: 2663-proxy-cn-5
   ```
 
 ## 数据采集API
