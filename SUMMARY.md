@@ -125,7 +125,7 @@
     spec:
       ref:
         kind: openapi
-        spec: 2663-capture-1-cn-1
+        spec: 2665-capture-1-cn-2
   ```
 * [Scraper API](shu-ju-cai-ji-api/scraper-api.md)
 * ```yaml
