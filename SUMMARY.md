@@ -34,7 +34,7 @@
       spec:
         ref:
           kind: openapi
-          spec: capture-common-cn-260411-1
+          spec: 2665-capture-1-cn
     ```
   * ```yaml
     type: builtin:openapi
