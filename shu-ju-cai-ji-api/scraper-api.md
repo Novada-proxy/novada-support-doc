@@ -12,11 +12,7 @@ Content-Type：x-www-form-urlencoded
 
 Authentication：Bearer YOUR\_API\_KEY
 
-> 获取apikey的两种方式
->
-> 方式1：[控制台](https://dashboard.novada.com/cn/overview/scraper/api/?id=25)
->
-> 方式2：[接口获取](https://developer-api.novada.com/zh/apis/zhua-qu-tao-can/tong-yong)
+> 获取apikey的方式: [控制台](https://dashboard.novada.com/cn/overview/scraper/api/?id=25)
 
 #### 请求参数
 
